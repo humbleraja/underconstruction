@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUMBLE RAJA — Under Construction</title>
+    
+    <!-- Tailwind CSS for utility styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Syncopate & Palanquin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@300&family=Syncopate&display=swap" rel="stylesheet">
+
+    <style>
+        .syncopate-regular {
+            font-family: "Syncopate", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .palanquin-light {
+            font-family: "Palanquin", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        
+        /* Background image styling covering the full viewport */
+        body {
+            background-image: url('FF Promo TTC 10-EDIT.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000;
+        }
+
+        /* Smooth hover transition */
+        a {
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #ffc2d7 !important;
+        }
+
+        /* Vertical text rotation for left and right edges */
+        .vertical-left {
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+        }
+        .vertical-right {
+            writing-mode: vertical-lr;
+        }
+
+        /* 60% reduction applied to 18pt = 7.2pt (approx 9.6px) */
+        .edge-text-reduced {
+            font-size: 7.2pt;
+        }
+    </style>
+</head>
+<body class="w-screen h-screen overflow-hidden m-0 p-0 text-[#fefefe] select-none">
+
+    <main class="relative w-full h-full flex flex-col justify-between items-center p-6 md:p-10 box-border">
+
+        <!-- Top Edge: HUMBLE RAJA -->
+        <header class="w-full text-center z-10 pt-2">
+            <h1 class="syncopate-regular tracking-[0.25em] edge-text-reduced uppercase text-[#fefefe]">
+                HUMBLE RAJA
+            </h1>
+        </header>
+
+        <!-- Middle Section: Left, Center, Right Edge Elements -->
+        <div class="absolute inset-0 flex items-center justify-between pointer-events-none px-6 md:px-12">
+            
+            <!-- Left Edge: CONTACT -->
+            <div class="pointer-events-auto flex items-center h-full">
+                <a href="mailto:hello@humbleraja.com" class="syncopate-regular edge-text-reduced text-[#fefefe] no-underline vertical-left tracking-[0.2em]">
+                    CONTACT
+                </a>
+            </div>
+
+            <!-- Center: humbleraja.gif -->
+            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <img src="humbleraja.gif" 
+                     onerror="this.src='https://placehold.co/600x400/111111/fefefe?text=HUMBLE+RAJA';" 
+                     alt="Humble Raja Animation" 
+                     class="max-w-[50vw] max-h-[50vh] w-auto h-auto object-contain pointer-events-auto drop-shadow-2xl">
+            </div>
+
+            <!-- Right Edge: INSTAGRAM -->
+            <div class="pointer-events-auto flex items-center h-full">
+                <a href="https://www.instagram.com/humbleraja" target="_blank" rel="noopener noreferrer" class="syncopate-regular edge-text-reduced text-[#fefefe] no-underline vertical-right tracking-[0.2em]">
+                    INSTAGRAM
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Bottom Edge: अंडर कंस्ट्रक्शन -->
+        <footer class="w-full text-center z-10 pb-2">
+            <p class="palanquin-light edge-text-reduced text-[#fefefe] tracking-wide">
+                अंडर कंस्ट्रक्शन
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
